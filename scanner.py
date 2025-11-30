@@ -84,7 +84,7 @@ def mac_to_stable_angle(mac_address: str) -> float:
     """
     Generate a stable angle (in radians) from a MAC address.
     
-    Uses MD5 hash to create a deterministic but pseudo-random angle
+    Uses SHA-256 hash to create a deterministic but pseudo-random angle
     for each unique device, ensuring consistent placement on radar.
     
     Args:
@@ -93,7 +93,7 @@ def mac_to_stable_angle(mac_address: str) -> float:
     Returns:
         Angle in radians (0 to 2*pi)
     """
-    hash_bytes = hashlib.md5(mac_address.encode()).digest()
+    hash_bytes = hashlib.sha256(mac_address.encode()).digest()
     # Use first 4 bytes to create angle
     hash_int = int.from_bytes(hash_bytes[:4], 'big')
     angle = (hash_int / (2**32)) * 2 * math.pi

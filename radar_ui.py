@@ -357,7 +357,7 @@ def demo_radar() -> None:
     
     # Initial demo devices
     demo_devices["AA:BB:CC:DD:EE:01"] = create_demo_device(
-        "AA:BB:CC:DD:EE:01", "Anamitra's iPhone", -45
+        "AA:BB:CC:DD:EE:01", "User's iPhone", -45
     )
     demo_devices["AA:BB:CC:DD:EE:02"] = create_demo_device(
         "AA:BB:CC:DD:EE:02", None, -65

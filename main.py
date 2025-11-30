@@ -141,7 +141,7 @@ class EtherSight:
         
         # Initialize demo devices
         demo_macs = [
-            ("AA:BB:CC:DD:EE:01", "Anamitra's iPhone", -45),
+            ("AA:BB:CC:DD:EE:01", "User's iPhone", -45),
             ("AA:BB:CC:DD:EE:02", None, -65),
             ("AA:BB:CC:DD:EE:03", "Smart Watch", -55),
             ("AA:BB:CC:DD:EE:04", "Laptop", -50),

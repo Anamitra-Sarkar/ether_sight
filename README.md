@@ -22,7 +22,7 @@
 ## Screenshots
 
 When running, the radar displays:
-- **Red Triangles (▲)**: Named devices (e.g., "Anamitra's iPhone")
+- **Red Triangles (▲)**: Named devices (e.g., "User's iPhone", "Smart Watch")
 - **Green Dots (●)**: Unknown devices (showing partial MAC address)
 
 ## Requirements
